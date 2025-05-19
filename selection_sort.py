@@ -10,7 +10,6 @@ def selectionSort(lista):
     return lista
 
 lista = [4,1,6,2,7,9]
-
 resultado = selectionSort(lista)
 print(resultado)
 
