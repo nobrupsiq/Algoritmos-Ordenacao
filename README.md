@@ -30,7 +30,6 @@
 ``O(n²)`` no pior, médio e melhor caso.
 Isso é útil para começar a entender análise de complexidade.
 
-Demonstração 
 ![App Screenshot](./.github/img/selectionSort.gif)
 
 ## 2. Bubble Sort
@@ -48,5 +47,4 @@ Demonstração
 
 - Isso introduz a ideia de casos melhores e piores de desempenho.
 
-Demonstração
 ![App Screenshot](./.github/img/bubble_sort.gif)
