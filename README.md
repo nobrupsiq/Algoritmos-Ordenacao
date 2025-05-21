@@ -16,67 +16,37 @@
 - Radix Sort
 - Bucket Sort
 
-## Aprendizados
-
-## 🧠 1. Lógica de algoritmos
-Desenvolvi habilidades de raciocínio lógico e resolução de problemas, pois precisa entender como os algoritmos manipulam os dados passo a passo para ordená-los.
-
-## 📊 2. Análise de complexidade
-Aprendi a analisar algoritmos em termos de:
-
-Tempo de execução (complexidade de tempo): por exemplo, saber que o Merge Sort é:
-```bash
-𝑂(𝑛 log 𝑛)
-```
-E o Bubble Sort é:
-```bash
-𝑂(𝑛²)
-```
+## Aprendizados 📚
 
 
-Uso de memória (complexidade de espaço): por exemplo, o Merge Sort usa memória extra, enquanto o Quick Sort pode ser feito in-place.```Um algoritmo é in-place quando ele usa uma quantidade constante de memória extra, ou seja, não precisa de espaço adicional proporcional ao tamanho da entrada. Ele reorganiza os elementos dentro da própria estrutura de dados, geralmente um vetor.```
+## 1. Selection Sort (Ordenação por seleção)
+- O algoritmo percorre a lista várias vezes, a cada passada selecionando o menor (ou maior) elemento e colocando-o na posição correta.
 
-## 🔁 3. Diferenças entre abordagens de ordenação
-Cada algoritmo usa uma estratégia diferente:
+- Mostra a importância de identificar mínimos/máximos e fazer trocas controladas.
 
-Selection, Bubble e Insertion Sort são simples e fáceis de entender, bons para dados pequenos.
+- Utilizamos dois laços for aninhados, onde um percorre a lista e o outro busca o menor elemento no restante da lista.
 
-Merge e Quick Sort usam divisão e conquista.
+- O Selection Sort sempre faz o mesmo número de comparações, independente da entrada:
+``O(n²)`` no pior, médio e melhor caso.
+Isso é útil para começar a entender análise de complexidade.
 
-Heap Sort utiliza uma estrutura de heap (árvore binária).
+Demonstração 
+![App Screenshot](./.github/img/selectionSort.gif)
 
-Counting, Radix e Bucket Sort são não comparativos e eficientes para certos tipos de dados, como inteiros em faixas conhecidas.
+## 2. Bubble Sort
 
-## ⚙️ 4. Estruturas de dados
-Ganhei muito mais conhecimento em estruturas como:
+- O Bubble Sort percorre a lista várias vezes, comparando elementos adjacentes e trocando-os de posição se estiverem fora de ordem.
+- Isso nos ensina a detectar e corrigir posições erradas passo a passo.
 
-Vetores e matrizes
+- O nome "bubble" vem da ideia de que os maiores elementos "sobem" para o final da lista (como bolhas de ar na água).
 
-Árvores (heap)
+- Podemos introduzir uma otimização que interrompe o algoritmo caso nenhuma troca seja feita em uma passada, mostrando a ideia de verificação de estado para melhorar desempenho.
 
-Filas e listas auxiliares
+- Mesmo com a otimização, a complexidade no pior caso ainda é ``O(n²)``.
 
-Contadores e buckets (baldes)
+- Melhor caso (lista já ordenada): ``O(n)`` com a otimização.
 
-## ⚡ 5. Otimização e escolha de algoritmo
-Aprendi quando e por que escolher um algoritmo de ordenação sobre outro com base em:
+- Isso introduz a ideia de casos melhores e piores de desempenho.
 
-Tamanho do dado
-
-Dados parcialmente ordenados
-
-Restrições de memória
-
-Necessidade de ordenação estável ou ```in-place```
-
-## 📚 6. Base para algoritmos mais complexos
-Agora que tenho essa base, consigo pesquisar e estudar mais sobre algoritmos mais avançados, como:
-
-Pesquisa binária
-
-Algoritmos de grafos
-
-Algoritmos genéticos
-
-Inteligência artificial e análise de big data
-
+Demonstração
+![App Screenshot](./.github/img/bubble_sort.gif)
