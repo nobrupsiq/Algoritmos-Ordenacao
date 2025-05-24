@@ -1,22 +1,23 @@
 def bubble_sort(lista):
   tamanho = len(lista)
   flag = True
-  storage = 0
 
   while flag:
     flag = False
-    i = 0
-    while i < tamanho -1:
-      if lista[i] > lista[i + 1]:
-        # Essa variavel storage armazena o meu primeiro indice, se não eu perco o indice e não consigo acesso
-        storage = lista[i] # 4
-        lista[i] = lista[i + 1]
-        lista[i + 1] = storage
+    indice = 0
+
+    while indice < tamanho -1:
+      if lista[indice] > lista[indice + 1]:
+        bau = lista[indice] # Com essa variável, eu não perco o meu primeiro indice da lista
+        lista[indice] = lista[indice + 1]
+        lista[indice + 1] = bau
         flag = True
-        i += 1
-      tamanho -= 1
-    return lista
-  
-lista = [4, 1, 6, 7, 9]
-resultado = bubble_sort(lista)
-print(resultado)
+
+      indice += 1
+    tamanho -= 1
+  return lista
+
+lista = [4, 1, 9, 6, 5]
+print(bubble_sort(lista))
+# O bubble sorte, ele sempre vai subindo o maior numero para o final da lista, causando o efeito bolha(subindo)
+# Porque em todo final de while eu decremento um numero da lista, pq eu sempre sei que o maior numero sempre vai esta no final da lista.
