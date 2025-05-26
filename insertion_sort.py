@@ -6,15 +6,20 @@
 # 4 - Continue esse processo até que todo o array esteja classificado.
 
 def insertion_sort(lista):
-    n = len(lista)
-    for i in range(1, n): # loop para percorrer a lista.
-        chave = lista[i] # A chave recebe os objetos da lista.
-        j = i - 1 # aqui o J recebe uma casa atras da chave.
-        while j >= 0 and lista[j] > chave: 
-            lista[j + 1] = lista[j] # Aqui o objeto J recebe uma casa afrente da que ele esta.
-            j -= 1
-        lista[j + 1] = chave # a chave vai receber uma casa a frente do objeto J.
+    tamanho_da_lista = len(lista)
+
+    for i in range(1, tamanho_da_lista): # loop para percorrer a lista.
+        chave = lista[i] # A chave recebe os items da lista.
+        primeiro_elemento = i - 1 # aqui o J recebe uma casa atras da chave.
+        while primeiro_elemento >= 0 and lista[primeiro_elemento] > chave: 
+            lista[primeiro_elemento + 1] = lista[primeiro_elemento] # Aqui o objeto primeiro_elemento recebe uma casa afrente da que ele esta.
+            primeiro_elemento -= 1
+
+        lista[primeiro_elemento + 1] = chave # a chave vai receber uma casa a frente do objeto primeiro_elemento.
+
     return lista
+
+
 lista = [1, 9, 4, 5, 2, 3]
 insertion_sort(lista)
 print(lista)
