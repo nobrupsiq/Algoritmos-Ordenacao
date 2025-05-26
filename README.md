@@ -30,7 +30,7 @@
 ``O(n²)`` no pior, médio e melhor caso.
 Isso é útil para começar a entender análise de complexidade.
 
-![App Screenshot](./.github/img/selectionSort.gif)
+- ![App Screenshot](./.github/img/selectionSort.gif)
 
 ## 2. Bubble Sort
 
@@ -47,4 +47,17 @@ Isso é útil para começar a entender análise de complexidade.
 
 - Isso introduz a ideia de casos melhores e piores de desempenho.
 
-![App Screenshot](./.github/img/bubble_sort.gif)
+- ![App Screenshot](./.github/img/bubble_sort.gif)
+
+## 3. Insertion Sort
+
+- A lógica do Insertion Sort é pegar um elemento e inseri-lo na posição correta dentro da parte da lista que já está ordenada.
+
+- Assim como o Selection Sort, aprendemos a dividir a lista entre a parte ordenada e a não ordenada, mas aqui a inserção acontece de forma dinâmica, deslocando elementos conforme necessário.
+
+- Ao inserir um novo elemento, outros precisam ser deslocados para a direita. Isso ensina como mover elementos dentro de uma estrutura como listas.
+
+- Insertion Sort é mais rápido que Selection e Bubble Sort quando a lista está quase ordenada, com desempenho ``O(n)`` no melhor caso.
+
+
+- ![App Screenshot](./.github/img/bubble_sort.gif)
