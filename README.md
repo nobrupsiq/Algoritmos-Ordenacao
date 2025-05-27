@@ -61,3 +61,17 @@ Isso é útil para começar a entender análise de complexidade.
 
 
 - ![App Screenshot](./.github/img/bubble_sort.gif)
+
+## 4. Merge Sort
+
+- O Merge Sort aplica a estratégia de "dividir para conquistar".
+
+- Divide o problema em subproblemas menores (quebrando a lista ao meio), resolve os subproblemas (ordenando as metades), e combina (merge) os resultados em uma única lista ordenada.
+
+- Merge Sort é naturalmente recursivo.
+
+- Junta duas listas ordenadas em uma só.
+
+- Merge Sort tem complexidade ``O(n log n)`` em todos os casos (melhor, médio e pior).
+
+- ![App Screenshot](./.github/img/merge_sort.gif)
