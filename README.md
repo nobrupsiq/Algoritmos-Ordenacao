@@ -75,3 +75,19 @@ Isso é útil para começar a entender análise de complexidade.
 - Merge Sort tem complexidade ``O(n log n)`` em todos os casos (melhor, médio e pior).
 
 - ![App Screenshot](./.github/img/merge_sort.gif)
+
+## 5 Counting Sort
+
+- Counting Sort é um algoritmo não-comparativo — ele conta quantas vezes cada valor aparece, em vez de comparar elementos.
+
+- Isso mostra que nem toda ordenação precisa de ``if A > B`` para funcionar.
+
+- O algoritmo só funciona bem quando sabemos o intervalo dos valores (por exemplo, de 0 a 100). Isso ensina que algoritmos podem ser super rápidos se usamos conhecimento extra sobre os dados. Exemplo: ordenar notas de alunos entre 0 e 10, ou idades entre 0 e 120.
+
+- O Counting Sort usa um array auxiliar (vetor de contagem) para armazenar quantas vezes cada valor aparece.
+
+- Quando os dados estão dentro de um intervalo pequeno, o Counting Sort tem complexidade ``O(n + k)``, onde:
+  - ``n`` é o número de elementos,
+  - ``k`` é o valor máximo (domínio dos dados).
+
+- ![App Screenshot](./.github/img/merge_sort.gif)
