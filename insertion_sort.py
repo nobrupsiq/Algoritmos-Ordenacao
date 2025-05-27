@@ -10,7 +10,7 @@ def insertion_sort(lista):
 
     for i in range(1, tamanho_da_lista): # loop para percorrer a lista.
         chave = lista[i] # A chave recebe os items da lista.
-        primeiro_elemento = i - 1 # aqui o J recebe uma casa atras da chave.
+        primeiro_elemento = i - 1 # aqui a variável peimeiro_elemento recebe uma casa atras da chave.
         while primeiro_elemento >= 0 and lista[primeiro_elemento] > chave: 
             lista[primeiro_elemento + 1] = lista[primeiro_elemento] # Aqui o objeto primeiro_elemento recebe uma casa afrente da que ele esta.
             primeiro_elemento -= 1
