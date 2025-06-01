@@ -9,7 +9,7 @@ no exemplo de antes, A = 3, fomos no C, vimos o numero da posição 3 (indice 2)
 '''
 
 
-def counting_sort_verbose(A):
+def counting_sort(A):
     print("Array A original:", A)
 
     k = max(A)          # Encontra o maior valor em A para definir o tamanho do array C
@@ -52,4 +52,4 @@ def counting_sort_verbose(A):
 
 # Teste
 A = [3, 2, 4, 7, 4, 7, 1, 2, 3]
-counting_sort_verbose(A)
+counting_sort(A)
