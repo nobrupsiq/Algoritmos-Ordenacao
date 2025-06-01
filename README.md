@@ -76,7 +76,7 @@ Isso é útil para começar a entender análise de complexidade.
 
 - ![App Screenshot](./.github/img/merge_sort.gif)
 
-## 5 Counting Sort
+## 5. Counting Sort
 
 - Counting Sort é um algoritmo não-comparativo — ele conta quantas vezes cada valor aparece, em vez de comparar elementos.
 
@@ -91,3 +91,26 @@ Isso é útil para começar a entender análise de complexidade.
   - ``k`` é o valor máximo (domínio dos dados).
 
 - ![App Screenshot](./.github/img/counting_sort.gif)
+
+
+## 6. Quick sort
+
+- Assim como o Merge Sort, o Quick Sort divide o problema em partes menores
+
+- Escolhe um ``pivô`` Coloca os elementos menores à esquerda e maiores à direita (particiona) e aplica o mesmo processo recursivamente
+
+- O algoritmo usa recursão para ordenar as sublistas criadas após a partição.
+
+- Com isso aprendemos a importância da condição de parada e da chamada de função sobre subconjuntos
+
+- A etapa de particionar a lista em torno de um pivô é o coração do Quick Sort
+
+- Nos ensina a controlar índices (ex: dois ponteiros), fazer comparações e organizar os dados em tempo linear.
+
+- A performance do Quick Sort depende da escolha do pivô
+
+- Se for o pior possível (ex: sempre o maior ou menor), o algoritmo vira ``O(n²)``
+
+- Com pivôs aleatórios ou do meio, atinge ``O(n log n)`` na média.
+
+- ![App Screenshot](./.github/img/quick_sort.gif)
