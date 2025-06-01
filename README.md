@@ -60,7 +60,7 @@ Isso é útil para começar a entender análise de complexidade.
 - Insertion Sort é mais rápido que Selection e Bubble Sort quando a lista está quase ordenada, com desempenho ``O(n)`` no melhor caso.
 
 
-- ![App Screenshot](./.github/img/bubble_sort.gif)
+- ![App Screenshot](./.github/img/insertion_sort.gif)
 
 ## 4. Merge Sort
 
@@ -90,4 +90,4 @@ Isso é útil para começar a entender análise de complexidade.
   - ``n`` é o número de elementos,
   - ``k`` é o valor máximo (domínio dos dados).
 
-- ![App Screenshot](./.github/img/merge_sort.gif)
+- ![App Screenshot](./.github/img/counting_sort.gif)
