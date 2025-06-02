@@ -96,7 +96,7 @@ Troca elementos mesmo que eles estejam quase no lugar certo, desperdiçando temp
 - Junta duas listas ordenadas em uma só.
 
 - Merge Sort tem complexidade ``O(n log n)`` em todos os casos (melhor, médio e pior).
-- - Vantagens do Merge Sort:
+- Vantagens do Merge Sort:
   - Desempenho consistente: Possui complexidade de tempo O(n log n) em todos os casos (melhor, médio e pior), o que o torna muito eficiente para grandes volumes de dados.
   - Mantém a ordem dos elementos iguais, o que é útil em muitas aplicações.
 - Desvantagens:
