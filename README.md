@@ -114,3 +114,84 @@ Isso é útil para começar a entender análise de complexidade.
 - Com pivôs aleatórios ou do meio, atinge ``O(n log n)`` na média.
 
 - ![App Screenshot](./.github/img/quick_sort.gif)
+
+## 7. Radix sort
+
+- O Radix Sort ordena os elementos dígito por dígito, geralmente do menos significativo (LSD) para o mais significativo (MSD).
+
+- sso ensina que é possível ordenar por "camadas" ou critérios secundários, um conceito útil para ordenações complexas (ex: nomes por sobrenome, depois por nome).
+
+- O Radix Sort depende de um algoritmo de ordenação estável para funcionar corretamente em cada dígito (geralmente o Counting Sort).
+
+- Funciona muito bem com números inteiros dentro de um intervalo de comprimento razoável. Dados com comprimento fixo (ex: números com até 6 dígitos, ou códigos postais, CPF etc).
+
+- Quando ``n`` é o número de elementos e ``k`` o número de dígitos, o Radix Sort tem complexidade ``O(n × k)``.
+
+- Em muitos casos práticos, isso é quase linear ``(O(n))``, tornando-o muito rápido.
+
+- Isso reforça a ideia de eficiência além da comparação, diferente de algoritmos como Quick/Merge que têm limites teóricos de ``O(n log n)`` com comparações.
+
+- Assim como Merge e Counting Sort, o Radix Sort usa memória extra para listas auxiliares.
+
+- Vantagens do Radix Sort
+
+  - Quando os dados são inteiros com um número de dígitos fixo e limitado, o Radix Sort pode ter desempenho quase linear ``(O(n))``, o que é melhor que os ``O(n log n)`` dos algoritmos baseados em comparação.
+
+  - Ele ordena com base em posições/dígitos, o que pode ser uma grande vantagem para tipos específicos de dados ``(ex: CPFs, CEPs, IDs, etc.)``.
+
+  - Como não depende de comparações, não sofre com os piores casos do Quick Sort (por exemplo, quando a lista está quase ordenada).
+
+- Desvantagens do Radix sort
+
+  - Só funciona bem com certos tipos de dados! Precisa que os dados sejam números inteiros (ou convertíveis) e que o número de dígitos seja limitado.
+
+  - Consome muita memoria! Usa estruturas auxiliares (como arrays/buckets) para cada dígito, o que pode ser um problema em sistemas com memória limitada.
+
+  - Implementação mais complexa! É mais difícil de implementar corretamente, especialmente com dados negativos, strings ou objetos personalizados.
+
+  - Desempenho depende do comprimento dos dados! Se os números tiverem muitos dígitos (por exemplo, números com 20 dígitos), o algoritmo faz muitas passagens e pode ficar lento
+
+- ![App Screenshot](./.github/img/radix_sort.gif)
+
+## 8. Bucket sort
+
+- Distribuição em faixas (bucketização)! O Bucket Sort distribui os elementos em baldes (subconjuntos) com base em seus valores (ex: de 0.0 a 0.1, de 0.1 a 0.2, etc.).
+
+- Aprendemos a organizar dados em categorias/fatigamentos antes de ordenar — útil para dados contínuos como números decimais ou probabilidades.
+
+- Combinação de algoritmos! Cada "balde" pode ser ordenado com qualquer outro algoritmo (Insertion Sort é comum).
+
+- Isso mostra a ideia de hibridização de algoritmos: usar o melhor algoritmo para cada parte do problema.
+
+- Alocação dinâmica de estruturas! Trabalha com listas de listas (ou arrays de arrays), o que reforça habilidades com estrutura de dados dinâmicas.
+
+- Eficiência em dados uniformemente distribuídos! Se os dados estiverem bem distribuídos, o Bucket Sort pode chegar a tempo linear ``O(n)``.
+
+- Não usa comparação direta globalmente! A ordenação global surge indiretamente pela ordenação local de baldes — outra forma de pensar fora do padrão "comparar elementos diretamente".
+
+- Vantagens do Bucket sort
+  - Muito rápido para dados bem distribuídos! Quando os dados estão uniformemente distribuídos (ex: entre 0 e 1), pode funcionar em tempo linear ``(O(n))``.
+
+  - Boa base para combinações! Pode ser combinado com outros algoritmos para otimizar desempenho, como usar Insertion Sort dentro dos baldes.
+
+  - Simplicidade conceitual! A ideia de distribuir → ordenar → juntar é fácil de entender conceitualmente.
+
+  - Funciona bem com números decimais! Diferente do Counting ou Radix, o Bucket Sort lida bem com valores fracionários (floats).
+
+- Desvantagens do Bucket sort
+
+  - Não funciona bem com dados desbalanceados! Se os dados estiverem todos concentrados em poucos baldes, ele perde eficiência (alguns baldes ficam vazios, outros cheios demais).
+
+  - Escolher o número e intervalo dos baldes é difícil! Se não for feito corretamente, o desempenho cai bastante. Isso exige conhecimento prévio dos dados.
+
+  - Não é in-place! Cria listas auxiliares (os baldes), logo consome mais memória.
+
+  - Não é ideal para dados com alta variação! Funciona melhor com dados contínuos e normalizados (ex: números entre 0 e 1). Se os dados forem inteiros muito diferentes, outros algoritmos são melhores.
+
+  - Estabilidade depende da ordenação interna! Por padrão, o Bucket Sort não é estável, a menos que use um algoritmo interno estável.
+
+- ![App Screenshot](./.github/img/bucket_sort.gif)
+
+# 9. Heap sort
+
+- 
