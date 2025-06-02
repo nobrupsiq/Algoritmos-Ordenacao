@@ -148,7 +148,7 @@ Troca elementos mesmo que eles estejam quase no lugar certo, desperdiçando temp
 
 - Com pivôs aleatórios ou do meio, atinge ``O(n log n)`` na média.
 - Vantagens do Quick Sort:
-  -Eficiente para grandes volumes de dados: É amplamente utilizado em bibliotecas padrão por seu desempenho consistente e rápido na média.
+  - Eficiente para grandes volumes de dados: É amplamente utilizado em bibliotecas padrão por seu desempenho consistente e rápido na média.
   - Apesar do pior caso ser O(n²), na média ele tem complexidade O(n log n) e é mais rápido que o Merge Sort na maioria dos casos, especialmente para arrays em memória
 - Desvantagens:
   - Pior caso é O(n²): Se o pivô escolhido for sempre o menor ou maior elemento, o desempenho se degrada — embora isso possa ser evitado com técnicas como pivô aleatório ou mediana de três
