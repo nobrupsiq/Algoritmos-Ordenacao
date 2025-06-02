@@ -119,7 +119,7 @@ Troca elementos mesmo que eles estejam quase no lugar certo, desperdiçando temp
   - ``n`` é o número de elementos,
   - ``k`` é o valor máximo (domínio dos dados).
 - Vantagens do Couting Sort:
-  -Altamente eficiente para intervalos pequenos de inteiros: Quando os valores estão dentro de um intervalo pequeno e conhecido, o Counting Sort pode ser mais rápido que algoritmos como Merge ou Quick Sort
+  - Altamente eficiente para intervalos pequenos de inteiros: Quando os valores estão dentro de um intervalo pequeno e conhecido, o Counting Sort pode ser mais rápido que algoritmos como Merge ou Quick Sort
   - Não usa comparações: Ao contrário de algoritmos como Bubble ou Merge Sort, ele não compara elementos diretamente, o que pode ser vantajoso em certas aplicações.
 - Desvantagens:
   - Só funciona com inteiros (ou valores discretos): Não é aplicável a dados como números de ponto flutuante, strings longas, ou objetos complexos sem adaptação.
