@@ -235,4 +235,39 @@ Troca elementos mesmo que eles estejam quase no lugar certo, desperdiçando temp
 
 # 9. Heap sort
 
-- 
+- Como funciona uma heap (estrutura de dados): O Heap Sort é baseado em uma estrutura de dados chamada heap, geralmente um heap binário (máximo ou mínimo).
+
+- Isso ensina como prioridades podem ser organizadas de forma eficiente, útil em filas de prioridade, agendamento de tarefas, etc.
+
+- Construção e manipulação de heaps! Aprendemos a:
+  - Construir um heap a partir de uma lista
+  - Fazer o heapify (ajuste da estrutura)
+  - Remover o maior (ou menor) elemento e reorganizar o restante.
+
+- Complexidade garantida
+
+- Ao contrário do Quick Sort (que tem pior caso ``O(n²)``), o Heap Sort sempre roda em ``O(n log n)``, independentemente da distribuição dos dados.`
+
+- Mostra a vantagem de algoritmos com tempo garantido.
+
+- Vantagens do Heap Sort:
+  - Complexidade garantida! Sempre ``O(n log n)``, mesmo no pior caso.
+
+- Bom para grandes volumes de dados!
+  - É confiável e robusto, mesmo quando há muitos elementos a ordenar.
+
+- Base para outras aplicações.
+  - O conhecimento de heaps é útil em filas de prioridade.
+  - Algoritmos de grafos (como ``Dijkstra``)
+  - Sistemas de agendamento de processos.
+
+- Desvantagens do Heap Sort.
+  - Não é estável! Elementos iguais podem ter sua ordem relativa alterada.
+
+  - Desempenho inferior ao Quick Sort na média! Em muitos casos práticos, o Quick Sort é mais rápido por causa do menor overhead.
+
+  - Mais difícil de implementar! A lógica de heapify e manutenção da estrutura é mais complexa do que algoritmos como Insertion ou Bubble.
+
+  - Acesso aos dados menos eficiente! O heap tem pior localidade de cache que o Merge ou Quick Sort, o que pode impactar em arquiteturas modernas.
+
+- ![App Screenshot](./.github/img/Heap_sort.gif)
