@@ -21,7 +21,6 @@ def bucket_sort(lista):
         for balde in baldes:
             resultado.extend(balde)
         print(f'lista ordenada é {resultado}')    
-    return resultado  
             
 
 arr = [10, 20, 5, 15,7,9,12,6, 25, 12, 18, 8]
