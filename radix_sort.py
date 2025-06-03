@@ -1,4 +1,3 @@
-
 def base_radix(lista,exp):
     tamanho_lista = len(lista)
     output = [0] *tamanho_lista
@@ -6,11 +5,11 @@ def base_radix(lista,exp):
 
     for i in range(tamanho_lista):
         index = (lista[i] // exp ) % 10
-        count[index] += 1                #ou seja,o index calcula um numero na posição exp(unidade,dezena,et), cada vez que ele aparecer sera somada 1 a seu contador count
+        count[index] += 1
 
-    for i in range(1,10):         #contagem cumulativa
+    for i in range(1,10):     
         count[i] += count[i-1]
-    i = tamanho_lista - 1               #percorre de tras pra frente
+    i = tamanho_lista - 1 
     while i >= 0:
         index = (lista[i] // exp) %10
         output[count[index]-1] = lista[i]
