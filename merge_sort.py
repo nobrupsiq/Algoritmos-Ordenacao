@@ -1,8 +1,6 @@
 def merge_sort(lista):
     if len(lista) <= 1: 
         return lista
-    
-
     div = len(lista) // 2   
     esquerda = lista[:div]  
     direita = lista[div:]  
