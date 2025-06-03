@@ -1,10 +1,11 @@
 def selectionSort(lista):
+    # Lista
     for index in range(len(lista)):
         menor_index = index
-
-        for j in range(index + 1, len(lista)):
-            if lista[j] < lista[menor_index]:
-                menor_index = j
+        # Busca Menor Valor
+        for indice_comparacao  in range(index + 1, len(lista)):
+            if lista[indice_comparacao ] < lista[menor_index]:
+                menor_index = indice_comparacao 
 
         lista[index], lista[menor_index] = lista[menor_index], lista[index]
     return lista
